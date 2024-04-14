@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hrithik Rai's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Hrithik Rai Saxena</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#Blogs-section" class="nav-link"><span>Blogs</span></a></li>
+			  <li class="nav-item"><a href="#Certifications-section" class="nav-link"><span>Certifications</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/new.png); background-size: 60% auto;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Hrithik Rai Saxena</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Nerd  ',
+						'Engineer  ',
+						'Blogger   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Full Stack Data Scientist</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://medium.com/@hrithikraisaxena97" class="btn btn-primary py-3 px-4">Blogs</a> 
+							<a href="https://github.com/HrithikRai" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Hrithik Rai Saxena</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Full Stack Data Scientist</span></p>
+										<p><span class="title-s">Experience: </span> <span>4 Years 2 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Wuppertal, Germany</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Data Science and Visualization</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Engineering</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>MLOps</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With over 4 years of immersive industrial experience in the field of data science & machine learning, accompanied by a master's degree in artificial Intelligence and data Science. 
+									Proficient in creating production level data science softwares, statistical analysis, research and hypothesis testing, time series analysis, deep learning &amp; machine learning. 
+									Demonstrated success in leading impactful projects and providing effective mentorship.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Machine Learning</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Autonomous Retail, Packaging and Supply Chain, Finance &amp; Public Sector</span></li>
+									<li class="d-flex"><span>Education:</span> <span>M.Sc. Artificial Intelligence and Data Science</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, German, Hindi</span></li>
+									<li class="d-flex"><span>Programming:</span> <span>Python, C, C++, JavaScript, SQL, HTML &amp; CSS</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Model monitoring and retraining, System diagnostics and testing, Docker, Google Cloud, JIRA, Version Control &amp; AWS</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Blogging, Music Composition</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/hrithikraisaxena/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>I am a Full stack Data scientist with over 4 years of immersive industrial experience. From taking an idea from the proof of concept until production, with holistic collaboration followed by utmost dedication and unwavering commitment to deliver the best product possible under the given resources and time, I find joy in delivering satisfaction..</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"> Aug 2023-Present</span>
+						<h2>Master Thesis Student/ Data Science Intern</h2>
+						<span class="position">Livello Technologies, Düsseldorf, Germany</span>
+						<p class="mt-4">Thesis title - A comparison of time series models for revenue and product demand
+							forecasting in smart fridges. / Ein Vergleich von Zeitreihenmodellen für Umsatz- und
+							Produktnachfrageprognosen bei intelligenten Kühlschränken. 
+							<ul>
+								<li>Developed an end-to-end Revenue and Product demand forecasting system with a novel ‘storage-oriented’ architecture, thus bringing down the average response time from 8 seconds to 3.5 seconds.</li>
+								<li>Introduced efficient data migration strategies (MongoDB, BigQuery), cutting monthly bills by 42%.</li>
+								<li>Introduced exogenous variables and dynamic model parametrization components, bringing down the MAPE from 63% to 27%.</li>
+								<li>Implemented a ‘data-drift based’ model retraining strategy, eliminating the human in the loop.</li>
+								<li>Implemented loggers, test cases and memory profilers for better system diagnostics and monitoring.</li>
+								<li>Efficient query optimization and caching for better payload handling.</li>
+								<li>Configured CI/CD pipeline – Docker Image build, Test, Security Check, Cloud Run, Deploy, Migrate.</li>
+								<li>Setting up API service and configuring Nvidia Jetson Nano for the Google’s ‘Mediapipe’ library for people counting, age and gender detection service. Created a real time dashboard for the same using Dash.</li>
+								<li><b>Achievements</b> - Top Star Performer Award.</li>
+								
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Oct 2022- Mar 2023</span>
+						<h2>Artificial Intelligence Intern</h2>
+						<span class="position">Syskron GmbH (Krones), Regensburg, Germany </span>
+						<p class="mt-4">The digitalisation unit of the Krones group, implementing state-of-the-art digital filling and packaging line. 
+							<ul>
+								<li>Formulated strategies for model retraining of the environment model of the company's benchmark Reinforcement Learning based product – ContiloopAI.</li>
+								<li>Updated the previous data pipeline to feature engineer raw factory data coming from an end device(ReadyKit) via Share2Act. This helped us to save on-site manual data acquisition and field trips.</li>
+								<li>Developed strategies for model retraining via different kind of performance based and time based triggers.</li>
+								<li>Documented training articles on reinforcement learning and model retraining and monitoring for the AI team.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Sept 2018- Jul 2021</span>
+						<h2>Data Scientist/ Data Analyst</h2>
+						<span class="position">Government of Madhya Pradesh, Bhopal, India </span>
+						<p class="mt-4">SCHMP, Department of Food, Civil Supplies and Consumer Protection. 
+							<ul>
+								<li>Developed end-to-end machine learning prototypes and scaled them to run in a production environment.</li>
+								<li>Created a SVM based classifier system with 92% accuracy to assign ration cards to different consumer based on their income. This reduced the request processing time for a consumer by 60%</li>
+								<li>Derived actionable insights from massive data obtained from 52 districts of the state to facilitate better policy making decisions.</li>
+								<li> Analyzed old information architectures and contributed to the design and development of new ones.</li>
+								<li> Created easy-to-understand visual dashboards projecting growth and giving insights to facilitate the proper execution of government schemes.</li>
+								<li> Created a chatbot using IBM Watson for quick redressal of urban consumer grievances.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2015-2019</span>
+    					<h2>Bachelor of Engineering - Information Technology</h2>
+    					<span class="position">University Institute of Technology, RGPV</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2024</span>
+    					<h2>Master of Science - Artificial Intelligence and Data Science</h2>
+    					<span class="position">Deggendorf Institute of Technology, Germany/ University of South Bohemia, Czech Republic</span>
+    					<p class="mt-4">Grade: 1.8</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="hrithik_resume.docx" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are some of the projects that I have worked on.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/HrithikRai/AMDB--Awesome-Movie-Database-and-Recommender-System/tree/test" class="block-20 zoom-effect" style="background-image: url('images/rts.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/HrithikRai/AMDB--Awesome-Movie-Database-and-Recommender-System/tree/test">AMDB - Awesome Movie Database and Recommender System</a></h3>
+                <p>A highly responsive movie database and content based recommender system using cosine similarity.</p>
+				<p>Dataset Used = <a href="https://grouplens.org/datasets/movielens/25m/">Movielens ratings(25 million rows).</a></p>
+				<p>
+					<ul>
+						<li>Search for a movie by its title or part and get similar recommendations</li>
+						<li>View Top rated movies, Genre Wise</li>
+						<li>Find users in the database with similar taste of movies</li>
+						<li>Recommend movies to a given user from the database</li>
+						<li>Get recommendations based on your choice of movies</li>
+				    </ul>
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/HrithikRai/Autoencoder-as-an-end-to-end-communication-system/tree/main" class="block-20 zoom-effect" style="background-image: url('images/autoencoder.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/HrithikRai/Autoencoder-as-an-end-to-end-communication-system/tree/main">Autoencoder as an end-to-end communication system</a></h3>
+                <p>
+					<ul>
+						<li>To train an Autoencoder for Information Transmission at different hyperparameter tunings 
+							and represent it as a standalone end-to-end communication system.</li>
+						<li>To build the parts of the Autoencoder such that they replace the components of a
+							conventional communication system.</li>
+						<li>Performing Hyperparameter tuning to ensure optimal reconstruction of outputs.</li>
+						<li>Comparing the performance of the autoencoder with different Modulation Schemes (QPSK/8PSK)</li>
+				    </ul>
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/HrithikRai/Parallelization-of-Energy-Calculation-for-a-box-of-water-molecules" class="block-20 zoom-effect" style="background-image: url('images/water.gif');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/HrithikRai/Parallelization-of-Energy-Calculation-for-a-box-of-water-molecules">Parallelization of Energy calculation for a box of water molecules</a></h3>
+                <p>
+					<ul>
+						<li>I have parallelized the massive energy calculation using technologies like MPI and OpenMP.</li>
+						<li>Project executed over a distributed computing infrastructure - MetaCentrum (Czech National Grid Organization)</li>
+						<li>Components parallelized - Reading the massive data, The energy calculation loop.</li>
+						<li>To facilitate Parallelization while achieving minimum load imbalance.</li>
+				    </ul>
+				</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/HrithikRai/Bike-Sharing-Demand-Prediction" class="block-20 zoom-effect" style="background-image: url('images/bike.gif');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/HrithikRai/Bike-Sharing-Demand-Prediction">Bike sharing demand estimation</a></h3>
+				  <p>
+					<ul>
+						<li>This Bike sharing system will function as a sensor network, which can be used for studying mobility in a city. Here I combined historical usage patterns with weather data in order to forecast bike rental demand in the Capital Bikeshare program in Washington, D.C.</li>
+						<li>Bike sharing demand prediction using hourly dataset (17379 rows, 17 features).</li>
+						<li>Used a multilinear regression model.</li>
+						<li>Took care of Multiple Linear Regression Assumptions : Autocorrelation, Multicollinearity, Endogeneity, Residual Normality</li>
+				    </ul>
+				  </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/HrithikRai/RecommenderSystemUsingPyspark" class="block-20 zoom-effect" style="background-image: url('images/pySpark.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/HrithikRai/RecommenderSystemUsingPyspark">A collaborative based movie recommender system using PySpark</a></h3>
+				  <p><ul>
+					<li>Recommending movies to a given user based on collabarative filtering</li>
+					<li>Built using PySpark</li>
+					<li>Dataset Used = <a href="https://grouplens.org/datasets/movielens/25m/">Movielens ratings(25 million rows).</a></li>
+					<li>Used Alternating Least Squares (ALS) matrix factorization.</li>
+				</ul></p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section" id="Blogs-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Blogs</h1>
+			  <h2 class="mb-4">Blogs</h2>
+			  <p>Since you have made it this far, I'd love to hear your views on some of the blogs that I've written.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://medium.com/@hrithikraisaxena97/the-sheer-beauty-of-time-series-analysis-52550b2bc790" class="block-20 zoom-effect" style="background-image: url('images/ts.gif');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://medium.com/@hrithikraisaxena97/the-sheer-beauty-of-time-series-analysis-52550b2bc790">The sheer beauty of Time Series Analysis</a></h3>
+				  <p>Understanding the core intuition behind time series analysis.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://medium.com/@hrithikraisaxena97/some-paradigms-that-every-machine-learning-engineer-should-know-acb29f7defca" class="block-20 zoom-effect" style="background-image: url('images/steml.gif');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://medium.com/@hrithikraisaxena97/some-paradigms-that-every-machine-learning-engineer-should-know-acb29f7defca">Stuff that every machine learning engineer should know.</a></h3>
+				  <p>Understanding benchmarks for creating a robust machine learning system.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://medium.com/@hrithikraisaxena97/the-model-retraining-bible-part-1-4894a5cea378" class="block-20 zoom-effect" style="background-image: url('images/mlb1.gif');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://medium.com/@hrithikraisaxena97/the-model-retraining-bible-part-1-4894a5cea378">The model retraining bible - Part 1</a></h3>
+				  <p>Post deployment model decay? No problem...</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  <br>
+		  <!-- added justify-content-center to center align the last two projects -->
+		  <div class="row d-flex justify-content-center">  
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://medium.com/@hrithikraisaxena97/model-retraining-bible-part-2-model-monitoring-93c5bb1fb97" class="block-20 zoom-effect" style="background-image: url('images/mlb2.gif');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://medium.com/@hrithikraisaxena97/model-retraining-bible-part-2-model-monitoring-93c5bb1fb97">The model retraining bible - Part 2</a></h3>
+					<p>Cause a model will only behave under supervision.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://medium.com/@hrithikraisaxena97/reinforcement-learning-cant-get-any-easier-than-this-c6ad431b99dd" class="block-20 zoom-effect" style="background-image: url('images/rl.gif');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://medium.com/@hrithikraisaxena97/reinforcement-learning-cant-get-any-easier-than-this-c6ad431b99dd">Reinforcement Learning, can’t get any easier than this...</a></h3>
+					<p>Understanding the intuition behind reinforcement learning, policy and value functions and reward</p>
+				  </div>
+				</div>
+			  </div>
+		   </div>
+		</div>
+	  </section>
+
+	  <section class="ftco-section" id="Certifications-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Certifications</h1>
+			  <h2 class="mb-4">Certifications</h2>
+			  <p>Here are some of the certifications that I collected along my Data Science Journey.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.udemy.com/certificate/UC-7f2b5ee9-5c57-4f36-ae0c-6982e41ad539/" class="block-20 zoom-effect" style="background-image: url('images/tscerti.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.udemy.com/certificate/UC-7f2b5ee9-5c57-4f36-ae0c-6982e41ad539/">Time Series Analysis, Forecasting, and Machine Learning.</a></h3>
+				  <p>Issuer - Udemy </p>
+				  <p>ETS, Time Series Modelling - Statistical (ARIMA,SARIMAX), Deep Learning (ANN,CNN,RNNs,LSTMs,NBeats,NHits,PSTPatch), Vector models, GARCH, FB Prophet, Holt-Winters, Tensorflow2, AWS Forecast </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.cloudskillsboost.google/public_profiles/775c27d3-e7e0-4528-bf5c-6ac918b4fa86" class="block-20 zoom-effect" style="background-image: url('images/googlecerti.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.cloudskillsboost.google/public_profiles/775c27d3-e7e0-4528-bf5c-6ac918b4fa86">Google's GenerativeAI path.</a></h3>
+				  <p>Issuer - Google</p>
+				  <p>Generative AI Studio, Image captioning models, transformer based and BERT, Attention mechanism, Encoder-Decoder architecture, Image generation, Large Language Models(LLMs), Responsible AI</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://www.coursera.org/account/accomplishments/verify/XFNAXQM8YKFV?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="block-20 zoom-effect" style="background-image: url('images/mathcerti.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.coursera.org/account/accomplishments/verify/XFNAXQM8YKFV?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">Data Science Math Skills</a></h3>
+				  <p>Issuer - Duke University</p>
+				  <p>Set Theory, Functions and Graphs, Derivatives, Optimization (non-constrained, contrained - Lagrange's multiplier, Linear Programming), Probability
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  <br>
+		  <!-- added justify-content-center to center align the last two projects -->
+		  <div class="row d-flex justify-content-center">  
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://www.udemy.com/certificate/UC-b317b58c-121e-4326-a55c-2c09f61aa3e6/" class="block-20 zoom-effect" style="background-image: url('images/cicdcerti.png');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://www.udemy.com/certificate/UC-b317b58c-121e-4326-a55c-2c09f61aa3e6/">CI/CD Pipelines and DevOps</a></h3>
+					<p>Issuer - Udemy</p>
+					<p>Continuous Integration and Continuous Delivery (CI/CD) · DevOps · MLOps · Gitlab · Docker · Unit Testing</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://www.credential.net/f5d33a63-f4fb-405c-a75d-40074a4d0e7c#gs.7do08m" class="block-20 zoom-effect" style="background-image: url('images/hypocerti.jpg');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://www.credential.net/f5d33a63-f4fb-405c-a75d-40074a4d0e7c#gs.7do08m">Hypothesis Testing</a></h3>
+					<p>Issuer - UpGrad</p>
+					<p>Types of hypothesis, types of test for the hypothesis, decision-making criteria for hypothesis, critical value and p-value method for testing</p>
+				  </div>
+				</div>
+			  </div>
+		   </div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-md-7 ftco-animate text-center">
+				<h2> <a href="https://www.linkedin.com/in/hrithikraisaxena/details/certifications/" class="btn btn-primary py-3 px-5">More Certifications</a> </h2>
+			</div>
+		</div>
+
+	  </section>
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="37">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="6">0</strong>
+                <span>DS/ML softwares deployed</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1715">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/sen.gif); background-size: 70% auto;">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/HrithikRai" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Wuppertal, Germany</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+ 49 15172456126</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">hrsaxena97@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="hrithik_resume.docx">Click Me X3</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/kicVGgtNdrZZ6qV19" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Let's connect over... </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/hrithikraisaxena/"><span class="icon-linkedin"></span></a></li>  
+				      <li class="ftco-animate"><a href="https://www.instagram.com/dean_prickle/"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate"><a href="https://medium.com/@hrithikraisaxena97"><span class="icon-medium"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
