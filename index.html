@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-
 <style>
 
 /*======================================
@@ -115,33 +114,6 @@
 
   </head>
 	
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DocsGPT Widget</title>
-  <script src="https://unpkg.com/docsgpt/dist/modern/main.js" type="module"></script>
-</head>
-
-<body>
-  <div id="app"></div>
-
-  <script type="module">
-    window.onload = function() {
-      renderDocsGPTWidget('app', {
-        apiHost: 'http://localhost:7001',
-        apiKey: "a4558c46-c1ce-4a6e-a713-f0ab315ea7df",
-        avatar: 'https://d3dg1063dc54p9.cloudfront.net/cute-docsgpt.png',
-        title: 'Your Title',
-        description: "Your description",
-        heroTitle: 'Your hero title',
-        heroDescription: 'Your hero description',
-        theme: "dark",
-        buttonIcon: "https://your-icon",
-        buttonBg: "#222327"
-      });
-    }
-  </script>
 </body>	
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -874,7 +846,30 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- Include the widget script from dist/modern or dist/legacy -->
+    <script
+      src="https://unpkg.com/docsgpt/dist/modern/main.js"
+      type="module"
+    ></script>
+    <script type="module">
+      window.onload = function () {
+        renderDocsGPTWidget("app", {
+          apiKey: "a4558c46-c1ce-4a6e-a713-f0ab315ea7df",
+          avatar: 'images/about-me.png',
+          size: "medium",
+          description: "Hrithik's clone",
+          heroTitle: "Hey there...",
+          heroDescription: 'Thanks for landing here. I am a digital twin of Hrithik Rai Saxena, feel free to ask any questions.',
+        });
+      };
+    </script>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
