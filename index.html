@@ -114,6 +114,35 @@
 
 
   </head>
+	
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocsGPT Widget</title>
+  <script src="https://unpkg.com/docsgpt/dist/modern/main.js" type="module"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script type="module">
+    window.onload = function() {
+      renderDocsGPTWidget('app', {
+        apiHost: 'http://localhost:7001',
+        apiKey: "a4558c46-c1ce-4a6e-a713-f0ab315ea7df",
+        avatar: 'https://d3dg1063dc54p9.cloudfront.net/cute-docsgpt.png',
+        title: 'Your Title',
+        description: "Your description",
+        heroTitle: 'Your hero title',
+        heroDescription: 'Your hero description',
+        theme: "dark",
+        buttonIcon: "https://your-icon",
+        buttonBg: "#222327"
+      });
+    }
+  </script>
+</body>	
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  
