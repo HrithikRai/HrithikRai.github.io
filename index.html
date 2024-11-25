@@ -205,6 +205,7 @@
 
 
 
+
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
 			<div class="row">
@@ -216,7 +217,7 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+										<img src="images/hrs.png" class="img-fluid rounded b-shadow-a" alt="">
 									  </div>
 									</div>
 									<!-- Details next to profile image -->
@@ -815,7 +816,10 @@
 		</div>
 	</section>
 
+	<div id="app"></div>
+	<!-- Include the widget script from dist/modern or dist/legacy -->
 
+	
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
@@ -826,6 +830,7 @@
             <p>Below are the details to reach out to me!</p>
           </div>
         </div>
+
 
         <div class="row d-flex contact-info mb-5">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -885,8 +890,6 @@
    </div>
  </section>
 
-
- 
 	
     <footer class="ftco-footer ftco-section">
 		<div class="container">
@@ -904,30 +907,7 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- Include the widget script from dist/modern or dist/legacy -->
-    <script
-      src="https://unpkg.com/docsgpt/dist/modern/main.js"
-      type="module"
-    ></script>
-    <script type="module">
-      window.onload = function () {
-        renderDocsGPTWidget("app", {
-          apiKey: "a4558c46-c1ce-4a6e-a713-f0ab315ea7df",
-          avatar: 'images/about-me.png',
-          size: "medium",
-          description: "Hrithik's clone",
-          heroTitle: "Hey there...",
-          heroDescription: 'Thanks for landing here. I am a digital twin of Hrithik Rai Saxena, feel free to ask any questions.',
-        });
-      };
-    </script>
+  
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -941,6 +921,19 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
+  <script type="module">
+	src="https://unpkg.com/docsgpt/dist/modern/main.js"
+	window.onload = function () {
+	renderDocsGPTWidget("app", {
+	apiKey: "a4558c46-c1ce-4a6e-a713-f0ab315ea7df",
+	avatar: 'images/hrs.png',
+	size: "medium",
+	description: "Hrithik's clone",
+	heroTitle: "Hey there...",
+	heroDescription: 'Thanks for landing here. I am a digital twin of Hrithik Rai Saxena, feel free to ask any questions.',
+	});
+	};
+	</script>
   
   <script src="js/main.js"></script>
     
