@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rezume Free Template by Colorlib</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<style>
+
+		#my_clone{
+			margin: 0;
+			font-family: 'Varela Round', sans-serif;
+			overflow: hidden;
+			background: linear-gradient(to right, #ffffff, #f8dce2);
+		}
+
+		#image {
+			position: absolute;
+			justify-content: center;
+			display: flex;
+			align-items: center;
+			padding-right: 40%;
+		}
+
+		#btn {
+    width: auto; /* Adjust width based on content */
+    min-width: 50px; /* Optional: Set a minimum width */
+    background: linear-gradient(to right, rgba(39, 44, 45, 0.918), rgb(0, 0, 0));
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 255, 208, 0.918), 2px 2px 10px rgb(220, 15, 203);
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+		#btn:hover {
+			box-shadow: 2px 2px 20px rgba(0, 255, 208, 0.918), 2px 2px 20px rgb(220, 15, 203);
+			letter-spacing: 2px;
+		}
+
+		#voice{
+    width: 200px;
+    display: none;
+	opacity: 50;
+}
+
+		#particles-js {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		
+		.site-hero {
+			position: relative;
+			overflow: hidden;
+		}
+		.container {
+			position: relative;
+			z-index: 2;
+		}
+
+		.perspective {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.card {
+			width: 270px;
+			margin-bottom: 50px;
+			height: 413px;
+			box-shadow: 0 70px 63px -60px #494848;
+			transform-style: preserve-3d;
+			transition: transform .05s linear;
+			position: relative;
+		}
+
+		.thumb {
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			border-radius: 15px;
+			position: relative;
+			background-position: center;
+		}
+
+		.thumb::after {
+			background: inherit;
+			content: '';
+			display: block;
+			position: absolute;
+			left: -60px;
+			top: 40px;
+			width: 100%;
+			height: 108%;
+			z-index: -1;
+			filter: blur(55px);
+		}
+
+		.card h2 {
+			position: absolute;
+			top: 10px;
+			left: 15px;
+			font-size: 24px;
+			font-weight: 600;
+			color: white;
+			transform: translateZ(80px);
+		}
+
+		.card span {
+			position: absolute;
+			bottom: 20px;
+			left: 15px;
+			font-size: 18px;
+			font-weight: 400;
+			color: white;
+			transform: translateZ(35px);
+		}
+		#typewriter {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		.cursor {
+			font-size: 1.5rem;
+			color: #fff;
+			animation: blink 0.7s infinite;
+		}
+		@keyframes blink {
+			50% { opacity: 0; }
+		}
+	</style>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+
+
+</head>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+
+
+	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#my_clone">Talk to my clone</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<section class="site-hero" style="background-image: url(images/image_2.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+		<!-- Particle container -->
+		<div id="particles-js"></div>
+	
+		<div class="container">
+			<div class="row intro-text align-items-center justify-content-center">
+				<div class="col-md-10 text-center pt-5">
+					<h1 class="site-heading site-animate">
+						Hello, I'm <strong class="d-block">Hrithik Rai Saxena</strong>
+					</h1>
+					<strong class="d-block text-white text-uppercase letter-spacing">
+						<span id="typewriter"></span><span class="cursor">|</span>
+					</strong>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<section class="site-section" id="section-portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="section-heading text-center col-md-12">
+					<h2>Featured <strong>Portfolio</strong></h2>
+				</div>
+			</div>
+			<div class="filters">
+				<ul>
+					<li class="active" data-filter="*">All</li>
+					<li data-filter=".genai">GenAI&NLP</li>
+					<li data-filter=".cv">ComputerVision</li>
+					<li data-filter=".tsa">TimeSeriesAnalysis</li>
+					<li data-filter=".fd">FraudDetection</li>
+				</ul>
+			</div>
+
+			<div class="filters-content">
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all cv">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/proj1.gif" alt="">
+							</div>
+							<a href="https://github.com/HrithikRai/satellite_image_segmentation.git" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="https://github.com/HrithikRai/satellite_image_segmentation.git" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://github.com/HrithikRai/satellite_image_segmentation.git">Satellite Image Segmentation</a></h4>
+							<div class="cat">Process satellite images quickly and efficiently to generate segmented outputs in real time.</div>
+						</div>                                         
+					</div>
+					<div class="single-portfolio col-sm-4 all genai">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/ai.gif" alt="">
+							</div>
+							<a href="https://github.com/HrithikRai/healthvault.ai.git" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="https://github.com/HrithikRai/healthvault.ai.git" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://github.com/HrithikRai/healthvault.ai.git">HealthVault.ai</a></h4>
+							<div class="cat">Eva processes medical reports, scans, and videos, providing real-time, easy-to-understand insights.</div>
+						</div>                                         
+					</div>                            
+					<div class="single-portfolio col-sm-4 all tsa">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/tsa.gif" alt="">
+							</div>
+							<a href="https://github.com/HrithikRai/forecast-app.git" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="https://github.com/HrithikRai/forecast-app.git" alt=""></div>
+								</div>
+							</a> 
+
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://github.com/HrithikRai/forecast-app.git">Revenue and Product Demand Forecast System</a></h4>
+							<div class="cat">End-to-end</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all genai">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/ai2.gif" alt="">
+							</div>
+							<a href="https://github.com/HrithikRai/MediSense-AI.git" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="https://github.com/HrithikRai/MediSense-AI.git" alt=""></div>
+								</div>
+							</a>                                
+						</div> 
+						<div class="p-inner">
+							<h4><a href="https://github.com/HrithikRai/MediSense-AI.git">MediSense-AI</a></h4>
+							<div class="cat">Semantic Search Engine</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all fd">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/anomaly.jpeg" alt="">
+							</div>
+							<a href="https://github.com/HrithikRai/FraudHawk.git" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="https://github.com/HrithikRai/FraudHawk.git" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://github.com/HrithikRai/FraudHawk.git">FraudHawk</a></h4>
+							<div class="cat">Anomaly detection in financial transactions via autoencoders and isolation forest.</div>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all fd">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="images/phishnet.gif" alt="">
+							</div>
+							<a href="https://github.com/HrithikRai/PhishNet.git" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="https://github.com/HrithikRai/PhishNet.git" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner">
+							<h4><a href="https://github.com/HrithikRai/PhishNet.git">Phishnet</a></h4>
+							<div class="cat">LLM based Phishing mails catcher</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- .section -->
+
+	
+	<section class="site-section " id="section-resume">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>My <strong>Resume</strong></h2>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2 class="mb-5">Education</h2>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> September 2021 – March 2024</span>
+						<h3>Master of Science (M.Sc.)</h3>
+						<p>Major in Artificial Intelligence and Data Science.</p>
+						<span class="school">Deggendorf Institute of Technology, Deggendorf, Germany and University of South Bohemia, Czech Republic </span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> April 2015 – May 2019.</span>
+						<h3>Bachelor of Engineering (B.E.)</h3>
+						<p>Information Technology.</p>
+						<span class="school">University Institute of Technology, RGPV, Bhopal, India</span>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+
+
+					<h2 class="mb-5">Experience - 5 years and counting...</h2>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> December 2024 – Present</span>
+						<h3>Assistant Professor (CSE – AI/ML)</h3>
+						<p>● Designed and taught graduate-level courses on Machine Learning, Deep Learning and GenAI.</p>
+						<p>● Skill Development and mentoring project work of around 300 students.</p>
+						<p>● Conducting research based on neurocomputing - Grid and Place neuron modelling for spatial navigation.</p>
+						<span class="school">Sagar Institute of Science, Technology and Research, Bhopal, India</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span>August 2024 - November 2024</span>
+						<h3>Data Scientist - Freelance</h3>
+						<p>● Project Developed - Real time financial analytics pipeline for high-frequency trading insights
+						<p>	● AI/ML Development: Developed market trend models (Scikit-learn, TensorFlow) for high-frequency trading and portfolio optimization.
+						<p>● Big Data Processing: To handle massive amounts of financial data, DB2 DWH was used.
+						<p>● MLOps & Deployment: For smooth deployment and monitoring, AI pipelines were deployed on AWS (S3, SageMaker, Lambda, and Bedrock).
+						<p>● Gen AI & NLP: Sentiment analysis of financial news and reports was done using LLMs, RAG, and LangChain.
+							</p>
+						<span class="school">Nirman Share Brokers</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> August 2023 - August 2024</span>
+						<h3>Data Scientist, Student Researcher</h3>
+						<p></p>● Led the development of revenue and product demand forecasting systems incorporating AI-research, statistical modelling, 
+						backend, and infrastructure.  
+						<p></p>● Developed CV on edge by implementing data transformations and backend migration pipelines for demographic analysis on 
+						edge device – Nvidia Jetson Nano. 
+						<p></p>● Managed production releases on GCP-Cloud Run using CI/CD pipelines (GitLab), ensuring compliance with IT policies. 
+						<p></p>● Reduced Cumulative Forecast Error from 8 to 3.2 through probabilistic modeling for intermittent demand (CROSTON-TSB). 
+						<p></p>● Spearheaded dynamically fine-tuned SARIMA-X models across kiosks using multivariate Time Series Analysis, 
+							hyperparameter optimization, and Python/R for EDA and statistical analysis. 
+						<p></p>● Optimized forecast system’s microservice architecture, integrating best practices and ensuring modular development. 
+						<p></p>● Resolved high response times, memory leaks, and downtimes, improving system reliability. 
+						<p></p>● Collaborated with cross-functional teams for A/B and user acceptance testing (UAT), fostering strong stakeholder 
+							relationships. 
+						<p></p>● Key achievement – Top Star Performer 
+												<span class="school">Livello Technologies, Düsseldorf, Germany  </span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> October 2022 - March 2023</span>
+						<h3>AI Intern</h3>
+						<p>● Formulated retraining strategies for Reinforcement Learning Product - ContiloopAI, emphasizing experiment design and 
+							monitoring. 
+							<p></p>● Enhanced data preprocessing pipelines with feature engineering for raw factory data, enabling real-time sampling strategies. 
+							<p></p>● Authored technical documentation on reinforcement learning and AI training, contributing to team knowledge base. 
+							</p>
+						<span class="school">SYSKRON GmbH (Krones), Regensburg, Germany</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> September 2018 – July 2021</span>
+						<h3>Data Scientist and Analyst (Contract)</h3>
+						<p>● Deployed end-to-end SVM based ml application for classification of Ration card allotment reducing turnaround time by 70%. 
+						<p></p>● Reengineered legacy information architectures, aligning with advanced data science strategies and dashboards.
+							</p>
+						<span class="school">SCHMP, Government of India (MP), Bhopal, India</span>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- .section -->
+
+	<section class="site-section" id="section-about">
+		<div class="container">
+			<div class="row mb-5 align-items-center">
+				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+					<img src="images/image_1.jpg" alt="Image placeholder" class="img-fluid">
+				</div>
+				<div class="col-lg-5 pl-lg-5">
+					<div class="section-heading">
+						<h2>About <strong>Me</strong></h2>
+					</div>
+					<p class="lead"><b>My journey has taken me across academia, industry, and research—whether mentoring 300+ students as an Assistant Professor, optimizing high-frequency trading models, or deploying AI-driven forecasting and analytics solutions. From neurocomputing research to deploying MLOps pipelines on AWS and GCP, I thrive on solving complex problems with data-driven </b></p>
+					<p class="mb-5  ">Hi, I’m Hrithik Rai Saxena, an AI researcher, data scientist, and educator passionate about bridging the gap between cutting-edge technology and real-world impact. With nearly five years of experience, I’ve navigated the intersection of AI, data science, and cloud computing, building intelligent systems that drive decision-making. Currently, I’m focused on spatial navigation modeling, Generative AI (LLMs, RAG-based systems, multimodal AI), and building AI-first applications that redefine possibilities. Always up for a conversation on AI, analytics, and the future of intelligence, let’s connect and explore what’s next!</p>
+
+					<p>
+						<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
+						<a href="resume.pdf" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<div id="particles-js"></div>
+	<section class="site-section" id="my_clone">
+		
+			<div class="container" id="top">
+				<div class="perspective">
+					<div class="card">
+						<div class="thumb" style="background-image: url('images/me.gif')" id="image"></div>
+						<h2>Hrithik's Clone</h2>
+						<span>Hey...</span>
+					</div>
+					<button id="btn"><img src="images/mic.svg" alt="mic"><span id="content">Click here to talk to me...</span></button>
+					<img src="images/voice.gif" alt="voice" id="voice">
+					<script type="module"  src="js/clone_speech.js"></script>
+				</div>
+		</div>
+	</section>
+
+
+	<section class="site-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h2> <strong>Testimonials</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/rout.jpeg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;His technical expertise and efficiency, particularly in AI and data science, were complemented by his dedication and strong work ethic. He remarkably grasped complex challenges and turned them into practical solutions. Beyond technical skills, Hrithik is a proactive communicator and a collaborative team player and I wholeheartedly recommend him.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Ashis Rout, Associate Vice President <a href="https://xebia.com/">Xebia.</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/marcus.jpeg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;His enthusiasm was infectious, and his
+								presence on the team elevated our collective productivity and morale.
+								One of the most notable aspects of Hrithik's performance was his ability to translate complex
+								data insights into actionable recommendations. His work directly contributed to several key
+								projects, helping us make data-driven decisions that improved our business outcomes.&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; Marcus Bauer, Chief Technical Officer<a href="https://www.livello.com/?lang=en">Livello Technologies</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+
+					<div class="block-47 d-flex mb-5">
+						<div class="block-47-image">
+							<img src="images/nirman.jpeg" alt="Image placeholder" class="img-fluid">
+						</div>
+						<blockquote class="block-47-quote">
+							<p>&ldquo;Nirman Group's analytical prowess was greatly influenced by Hrithik's technical proficiency in data engineering, cloud AI/ML deployment, MLOps, and AI-based financial modeling..&rdquo;</p>
+							<cite class="block-47-quote-author">&mdash; <a href="https://nirmanbroking.com/">Nirman Share Brokers</a></cite>
+						</blockquote>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="site-section pb-0"  id="section-services">
+		<div class="container">
+
+			<div class="row mb-4">
+				<div class="col-md-12">
+					<div class="section-heading text-center">
+						<h2>My <strong>Services</strong></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-browser2"></span>
+						</span>
+						<h3 class="mb-4">AI & Data Science Solutions</h3>
+						<p>●Development of AI-driven analytics and forecasting models for finance, healthcare, and industry.
+						<p></p>●Expertise in machine learning, deep learning, and generative AI, including LLMs and RAG-based systems.
+						<p></p>●Big data processing, feature engineering, and optimization for real-time decision-making.</p>
+						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-presentation"></span>
+						</span>
+						<h3 class="mb-4">MLOps & Cloud Deployment</h3>
+						<p>●Scalable AI model deployment.
+							<p></p>●End-to-end MLOps pipelines, CI/CD automation, and cloud-native infrastructure for AI applications.
+							<p></p>●Optimization of AI workflows, reducing latency, improving efficiency, and ensuring compliance.</p>
+						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 text-center mb-5">
+					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+						<span class="icon">
+							<span class="icon-video2"></span>
+						</span>
+						<h3 class="mb-4">Education & Mentorship
+
+						</h3>
+						<p>●AI/ML training and curriculum development for universities, professionals, and organizations.
+							
+							<p></p>●Hands-on workshops and consulting in AI strategy, data science best practices, and cloud computing.</p>
+						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+					</div>
+				</div>
+
+				
+
+			</div>
+		</div>
+	</section>
+
+	<section class="site-section" id="section-blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Blog on <strong><a href="https://medium.com/@hrithikraisaxena97"> Medium</a></strong></h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-lg-4 mb-4">
+					<div class="blog-entry">
+						<a href="#"><img src="images/timser.gif" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text">
+							<h3><a href="https://medium.com/@hrithikraisaxena97/the-sheer-beauty-of-time-series-analysis-52550b2bc790">The Sheer Beauty of Time Series Analysis…</a></h3>
+							<p class="mb-4">An intuitive no-formula based approach to understand the time series analysis.</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 mb-4">
+					<div class="blog-entry">
+						<a href="https://medium.com/@hrithikraisaxena97/the-a-b-testing-bible-d6f8908c0a24"><img src="images/llm.jpeg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text">
+							<h3><a href="https://medium.com/@hrithikraisaxena97/llms-at-scale-turning-your-prototype-into-a-production-ready-powerhouse-061f1ffbb23f">LLMs at Scale, Turning Your Prototype Into a Production-Ready Powerhouse</a></h3>
+							<p class="mb-4">Providing a comprehensive step-by-step guide from initial experimentation to deploying a production-ready LLM application.</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 mb-4">
+					<div class="blog-entry">
+						<a href="#"><img src="images/ab.jpeg" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text">
+							<h3><a href="#">The A/B Testing Bible</a></h3>
+							<p class="mb-4">The curiosity of business stakeholders never ends. Let’s understand A/B testing from a tech, business, and statistical point of view.</p>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="site-section" id="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Get <strong>In Touch</strong></h2>
+					</div>
+				</div>
+
+
+				<div class="col-md-5 pl-md-5">
+					<h3 class="mb-5">My Contact Details</h3>
+					<ul class="site-contact-details">
+						<li>
+							<span class="text-uppercase">Email</span>
+							hrsaxena97@gmail.com
+						</li>
+						<li>
+							<span class="text-uppercase">Phone</span>
+							+49 15172456126, +91 9617898678
+						</li>
+
+						<li>
+							<span class="text-uppercase">Have a Question?</span>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSffnCNYU70a0PRoXPvfOfCtyL5v64Jw5736fvKxjiLSHqPEjA/viewform">Click Here</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="site-footer">
+		<div class="container">
+
+			<div class="row mb-5">
+				<p class="col-12 text-center">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright © 2025 All rights reserved | Made with Love by Hrithik</a>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
+			</div>
+			
+			<div class="row mb-5">
+				<div class="col-md-12 text-center">
+					<p>
+						<a href="https://medium.com/@hrithikraisaxena97" class="social-item"><span class="icon-blog"></span></a>
+						<a href="https://github.com/HrithikRai" class="social-item"><span class="icon-github"></span></a>
+						<a href="https://www.linkedin.com/in/hrithikraisaxena/" class="social-item"><span class="icon-linkedin2"></span></a>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+
+
+
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		particlesJS("particles-js", {
+			"particles": {
+				"number": {
+					"value": 100,
+					"density": {
+						"enable": true,
+						"value_area": 800
+					}
+				},
+				"color": {
+					"value": "#000000"
+				},
+				"shape": {
+					"type": "circle",
+					"stroke": {
+						"width": 0,
+						"color": "#000000"
+					}
+				},
+				"opacity": {
+					"value": 0.5,
+					"random": false,
+					"anim": {
+						"enable": false
+					}
+				},
+				"size": {
+					"value": 3,
+					"random": true
+				},
+				"line_linked": {
+					"enable": true,
+					"distance": 150,
+					"color": "#000000",
+					"opacity": 0.4,
+					"width": 1
+				},
+				"move": {
+					"enable": true,
+					"speed": 2,
+					"direction": "none",
+					"random": false,
+					"straight": false,
+					"out_mode": "out",
+					"bounce": false
+				}
+			},
+			"interactivity": {
+				"detect_on": "canvas",
+				"events": {
+					"onhover": {
+						"enable": true,
+						"mode": "grab"
+					},
+					"onclick": {
+						"enable": true,
+						"mode": "push"
+					}
+				}
+			}
+		});
+	</script>
+	<script>
+		const phrases = ["AI Enthusiast", "a Tech Explorer", "a Designer", "a Blogger", "a teacher"];
+		let currentPhraseIndex = 0;
+		let charIndex = 0;
+		let isDeleting = false;
+		
+		function typeEffect() {
+			const typewriter = document.getElementById("typewriter");
+			const currentPhrase = phrases[currentPhraseIndex];
+			
+			if (isDeleting) {
+				typewriter.textContent = currentPhrase.substring(0, charIndex--);
+			} else {
+				typewriter.textContent = currentPhrase.substring(0, charIndex++);
+			}
+	
+			if (!isDeleting && charIndex === currentPhrase.length + 1) {
+				isDeleting = true;
+				setTimeout(typeEffect, 1000); // Pause before deleting
+			} else if (isDeleting && charIndex === 0) {
+				isDeleting = false;
+				currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+				setTimeout(typeEffect, 500); // Pause before typing next
+			} else {
+				setTimeout(typeEffect, isDeleting ? 50 : 100);
+			}
+		}
+	
+		document.addEventListener("DOMContentLoaded", () => {
+			setTimeout(typeEffect, 1000);
+		});
+	</script>
+>	<script src="js/clone.js"></script>
+
+	<!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    	<script src="js/google-map.js"></script> -->
+
+    </body>
+    </html>
