@@ -1,1 +1,0 @@
-joke_chain = RemoteRunnable("https://myclone-production.up.railway.app/clone_chat/")

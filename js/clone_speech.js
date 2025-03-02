@@ -80,7 +80,14 @@ function sendMessageToChatbot(message) {
 }
 
 function takeCommand(message) {
+    if (message.toLowerCase().includes("linkedin")) {
+        window.open("https://www.linkedin.com/in/hrithikraisaxena/", "_blank");
+    } else if (message.toLowerCase().includes("github")) {
+        window.open("https://github.com/HrithikRai", "_blank");
+    } else {
+        sendMessageToChatbot(message);
+    }
+    
     btn.style.display = "flex";
     voice.style.display = "none";
-    sendMessageToChatbot(message);
 }
