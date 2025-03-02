@@ -84,6 +84,8 @@ function takeCommand(message) {
         window.open("https://www.linkedin.com/in/hrithikraisaxena/", "_blank");
     } else if (message.toLowerCase().includes("github")) {
         window.open("https://github.com/HrithikRai", "_blank");
+    } else if (message.toLowerCase().includes("blogs")) {
+        window.open("https://medium.com/@hrithikraisaxena97", "_blank");
     } else {
         sendMessageToChatbot(message);
     }
